@@ -546,3 +546,22 @@ remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegot
 fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
 applelab@uok-i-mac22 git-cafe-exercise % 
 ```
+
+#Bundle 6 exo 2
+```bash
+applelab@uok-i-mac22 git-cafe-exercise % git checkout -b ft/fix-bug
+Switched to a new branch 'ft/fix-bug'
+applelab@uok-i-mac22 git-cafe-exercise % ls -a
+.               bat             index-1.html    index-4.html    Menu.html
+..              css             index-2.html    index.html      Muenu.html
+.git            images          index-3.html    js              README.md
+applelab@uok-i-mac22 git-cafe-exercise % mv index-4.html Contact
+applelab@uok-i-mac22 git-cafe-exercise % ls -a
+.               bat             images          index-3.html    Menu.html
+..              Contact         index-1.html    index.html      Muenu.html
+.git            css             index-2.html    js              README.md
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/fix-bug
+remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegoto-collab.
+fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
+applelab@uok-i-mac22 git-cafe-exercise % 
+```
