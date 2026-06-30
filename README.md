@@ -479,3 +479,70 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/fatimabobegoto-collab/git-cafe-exercise.git
    d1d3f9c..d209111  main -> main
 ```
+
+
+#Bundle 6 exo 1
+
+```bash
+applelab@uok-i-mac22 ~ % cd git-cafe-exercise
+applelab@uok-i-mac22 git-cafe-exercise % ls -a
+.               bat             index-1.html    index-4.html    README.md
+..              css             index-2.html    index.html
+.git            images          index-3.html    js
+applelab@uok-i-mac22 git-cafe-exercise % git branch
+* main
+applelab@uok-i-mac22 git-cafe-exercise % git checkout -b ft/menu
+Switched to a new branch 'ft/menu'
+applelab@uok-i-mac22 git-cafe-exercise % touch Menu.html
+applelab@uok-i-mac22 git-cafe-exercise % nano Muenu.html
+applelab@uok-i-mac22 git-cafe-exercise % git add .
+applelab@uok-i-mac22 git-cafe-exercise % git commit -m "menu page creation"
+[ft/menu ca728f7] menu page creation
+ 2 files changed, 12 insertions(+)
+ create mode 100644 Menu.html
+ create mode 100644 Muenu.html
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/menu
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 499 bytes | 499.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/menu' on GitHub by visiting:
+remote:      https://github.com/fatimabobegoto-collab/git-cafe-exercise/pull/new/ft/menu
+remote: 
+To https://github.com/fatimabobegoto-collab/git-cafe-exercise.git
+ * [new branch]      ft/menu -> ft/menu
+branch 'ft/menu' set up to track 'origin/ft/menu'.
+applelab@uok-i-mac22 git-cafe-exercise % git remote -v 
+origin  https://github.com/fatimabobegoto-collab/git-cafe-exercise.git (fetch)
+origin  https://github.com/fatimabobegoto-collab/git-cafe-exercise.git (push)
+applelab@uok-i-mac22 git-cafe-exercise % git remote remove origin
+applelab@uok-i-mac22 git-cafe-exercise % git remote add origin https://github.com/TheGymRwanda/git-cafe-exercise.git
+applelab@uok-i-mac22 git-cafe-exercise % git branch -M main
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/menu
+error: src refspec ft/menu does not match any
+error: failed to push some refs to 'https://github.com/TheGymRwanda/git-cafe-exercise.git'
+applelab@uok-i-mac22 git-cafe-exercise % git branch
+* main
+applelab@uok-i-mac22 git-cafe-exercise % git remote -v
+origin  https://github.com/TheGymRwanda/git-cafe-exercise.git (fetch)
+origin  https://github.com/TheGymRwanda/git-cafe-exercise.git (push)
+applelab@uok-i-mac22 git-cafe-exercise % git  checkout -b ft/menu
+Switched to a new branch 'ft/menu'
+applelab@uok-i-mac22 git-cafe-exercise % touch menu.html
+applelab@uok-i-mac22 git-cafe-exercise % nano menu.html
+applelab@uok-i-mac22 git-cafe-exercise % git add .
+applelab@uok-i-mac22 git-cafe-exercise % git commit -m "creation: menu page" 
+[ft/menu 171fba6] creation: menu page
+ 1 file changed, 12 insertions(+)
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/menu
+remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegoto-collab.
+fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/menu
+remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegoto-collab.
+fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
+applelab@uok-i-mac22 git-cafe-exercise % 
+```
