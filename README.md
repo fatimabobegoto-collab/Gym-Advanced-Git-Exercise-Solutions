@@ -565,3 +565,51 @@ remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegot
 fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
 applelab@uok-i-mac22 git-cafe-exercise % 
 ```
+#bundle 6 exo 3
+
+```bash
+applelab@uok-i-mac22 Web % cd 
+applelab@uok-i-mac22 ~ % ls -a
+.                       .npm                    Development
+..                      .pub-cache              Documents
+.bash_history           .swiftpm                Downloads
+.CFUserTextEncoding     .Trash                  git-cafe-exercise
+.config                 .viminfo                index.html
+.dart-tool              .vscode                 Library
+.dartServer             .zsh_history            mhealth
+.DS_Store               .zsh_sessions           Movies
+.flutter                apple.html              Music
+.gitconfig              Applications            Pictures
+.lesshst                Desktop                 Public
+applelab@uok-i-mac22 ~ % cd git-cafe-exercise
+applelab@uok-i-mac22 git-cafe-exercise % ls -a
+.               bat             images          index-3.html    Menu.html
+..              Contact         index-1.html    index.html      Muenu.html
+.git            css             index-2.html    js              README.md
+applelab@uok-i-mac22 git-cafe-exercise % nano index.html
+applelab@uok-i-mac22 git-cafe-exercise % nnano Contact
+zsh: command not found: nnano
+applelab@uok-i-mac22 git-cafe-exercise % nano Contact 
+applelab@uok-i-mac22 git-cafe-exercise % git add .
+applelab@uok-i-mac22 git-cafe-exercise % git commit -m "number of change"
+[ft/fix-bug 96d6dcf] number of change
+ 1 file changed, 204 insertions(+), 204 deletions(-)
+ rename index-4.html => Contact (97%)
+applelab@uok-i-mac22 git-cafe-exercise % git push
+fatal: The current branch ft/fix-bug has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/fix-bug
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+applelab@uok-i-mac22 git-cafe-exercise % git branch
+* ft/fix-bug
+  ft/menu
+  main
+applelab@uok-i-mac22 git-cafe-exercise % git push -u origin ft/fix-bug
+remote: Permission to TheGymRwanda/git-cafe-exercise.git denied to fatimabobegoto-collab.
+fatal: unable to access 'https://github.com/TheGymRwanda/git-cafe-exercise.git/': The requested URL returned error: 403
+applelab@uok-i-mac22 git-cafe-exercise % 
+```
